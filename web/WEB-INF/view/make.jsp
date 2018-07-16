@@ -33,12 +33,12 @@
 
     <table id="carTable">
         <tr>
-            <th>Photo</th>
-            <th>Year / Make / Model</th>
-            <th>Vehicle Id# / Mileage</th>
-            <th>Body Style</th>
-            <th>Transmission</th>
-            <th>Price</th>
+            <th><fmt:message key="colPhoto"></th>
+            <th><fmt:message key="col2"></th>
+            <th><fmt:message key="col3"></th>
+            <th><fmt:message key="col4"></th>
+            <th><fmt:message key="colTransmission"></th>
+            <th><fmt:message key="colPrice"></th>
         </tr>
         <c:forEach var="car" items="${makeCars}" varStatus="iter">
 
@@ -55,9 +55,9 @@
                     <span class="largeText" style="color:white">${car.name}</span>
                 </td>
                 
-                <td><span>VIN#: ${car.vin}</span><br>
+                <td><span><fmt:message key="colVIN#">: ${car.vin}</span><br>
                     <br>
-                    <span>Odometer: ${car.mileage} miles</span>
+                    <span><fmt:message key="colOdometer">: ${car.mileage} miles</span>
                 </td>
                 
                 <td>${car.body}</td>
