@@ -1,0 +1,563 @@
+/*
+Document   : carsale
+Created on : Jun 19, 2018, 3:59:32 PM
+Author     : Jon Sobier
+Description: Style rules for the CarSale application
+*/
+
+/* html tags */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #000;
+    color: gold;
+}
+
+hr {
+    border: 0;
+    background-color: #fff;
+    height: 1px;
+}
+
+table {
+    margin: 0 20px;
+    border-spacing: 0;
+    text-align: center;
+    border: solid 1px #f5eabe;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover { text-decoration: none }
+
+a:visited { color: inherit }
+
+img { 
+    border: none;
+}
+
+
+#makeImg {
+    width:275px;
+    height:154px;
+}
+
+#cartImg {
+    width:400px;
+    height:215px;
+}
+
+input, select { margin: 5px }
+
+li { margin: 10px 0 }
+
+label { line-height: 30px }
+
+
+/* general styles */
+#main {
+    width:auto;
+    background-color:rgba(0,0,0,0.8);
+}
+
+#singleColumn {
+    margin: 20px 30px;
+    text-align: left;
+}
+
+.lightBlue { background-color: #edf8f7 }
+
+.white { background-color: #fff }
+.gray { background-color: darkgray }
+
+.black {
+    background-color: black;
+}
+.bubble {
+    font-weight: bold;
+    background-color: #333;
+    padding: 5px;
+    color: white;
+}
+
+.hMargin { margin: 0 30px }
+
+.xlargeText {
+    font-size:36px;
+    color:white;
+}
+
+.largeText {
+    font-size: x-large;
+    color: springgreen;
+}
+.mediumText {
+    font-size: medium;
+    color: red;
+}
+.smallText { 
+    font-size: small; 
+    color : white;
+}
+
+.reallySmallText { font-size: xx-small }
+
+.header {
+    background-color: black;
+    height: 30px;
+}
+
+
+/* styles for elements contained in the header, i.e.,
+   shopping cart widget, language toggle, and logo */
+#header {
+    width: 100%;
+    height: 150px;
+    border-bottom: #fff outset medium;
+    background: rgba(0,0,0,0.7);
+}
+.fancy1 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:42px;
+    margin-top:10px;
+    color: #fff;
+}
+
+.fancy2 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:24px;
+    margin-top:-25px;
+    color: #fff
+}
+
+.makeHeader {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:42px;
+    margin: 0 28% 2% 19%;
+    text-align:center;
+    color: #fff;
+    color: #fff
+}
+
+
+#logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#logoText {
+    float: left;
+    margin: 20px 0 0 90px;
+    /* font styles apply to text within img alt attribute */
+    font-family: 'American Typewriter', Courier, monospace;
+    font-size: 50px;
+    color: #333;
+}
+
+#widgetBar {
+    height: 10px;
+    width: 1500px;
+    float: right;
+    clear: right;
+    margin-top: 0px;
+}
+
+#cart {
+    position: absolute;
+    margin: 5px 0 0 2px;
+}
+
+.horizontalMargin {
+    margin-left: 28px;
+    margin-right: 5px
+}
+
+#viewCart {
+    text-align: left;
+    width: 210px;
+}
+
+.headerWidget {
+    width: 194px;
+    margin: 20px 0;
+    font-size: small;
+    float: right;
+    line-height: 25px;
+}
+
+
+/* footer styles */
+#footer {
+    height: 60px;
+    width: 100%;
+    clear: left;
+}
+
+#footerText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#footerDivider {
+    margin: 0 25px;
+    width: 100%;
+}
+
+
+/* index page styles */
+
+#indexLeftColumn {
+    text-align: left;
+    background-color: #fff;
+    height: 100%;
+    width: 650px;
+    float: left;
+    padding-right:25px;
+    margin-left:25px;
+    border:#fff outset thick;
+}
+
+#indexRightColumn {
+    text-align: left;
+    height: 100%;
+    width: 875px;
+    float: left;
+}
+
+#welcomeText {
+    margin: 30px 5px 0 30px;
+    line-height: 1.4em;
+    text-align: center;
+    color:#333;
+}
+
+.makeBox {
+    border: #fff outset thin;
+    height: 200px;
+    width: 250px;
+    margin: 15px 5px 15px 11px;
+    float: right;
+    background-color: #fff;
+}
+/* Safari - disables underline for make boxes on index page */
+.makeBox a {
+    text-decoration: none;
+}
+
+.makeLabel {
+    position: absolute;
+    border-bottom: #000 solid medium;
+    background-color: black;
+    height: 40px;
+    width: 250px;
+    margin: 0px;
+}
+
+.makeLabelText {
+    color:white;
+    position: absolute;
+    line-height: 150%;
+    font-size: x-large;
+    margin: 0px 15px;
+}
+
+.makeImage {
+    width: 235px;
+    height: 132px;
+    padding: 1px;
+    margin: 40px 15px 15px 4px;
+}
+
+/* make page styles */
+
+#makeLeftColumn {
+    width: 10%;
+    height:100%;
+    float: left;
+    clear: none;
+    margin-top: 25px;
+    margin-left:1%;
+    padding-right: 50px;
+    padding-left: 40px;
+    border-right: #fff outset thick;
+    border-left: #ffffff outset thick;
+}
+
+#makeRightColumn {
+    margin-top:25px;
+    width: 75%;
+    height:100%;
+    float: right;
+}
+
+.makeButton {
+    margin: 15px 25px;
+    padding: 13px;
+    display: inline-block;
+    background-color: transparent;
+    text-align: left;
+}
+
+#selectedMake {
+    background-color: darkorange;
+    margin-left: 10px;
+    width: auto;
+}
+
+#makeTitle {
+    margin: -34px 180px 0 0;
+    font-size: x-large;
+    float: right;
+    color: white;
+    background-color: black;
+    padding: 7px;
+}
+
+.makeText {
+    text-align: start; 
+    line-height: 25px;
+    color: white;
+    font-size: x-large;
+}
+
+#carTable {
+    width: 100%; 
+}
+
+#carTable tr { 
+    height: auto;
+    border: #fff thin outset;
+}
+
+#carTable td {
+    border: #fff thin outset;
+    width: 250px;
+}
+
+/* cart page styles */
+#actionBar {
+    color: white;
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#subtotal { 
+    color: lawngreen;
+    margin: 1% 40% 1% 40%; 
+}
+
+p#cartPara {
+    width:100%;
+    text-align: center;
+    color:red;
+    font-size:30px;
+}
+
+p#cartEmptyPara {
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:30px;
+}
+
+#cartTable { 
+    margin-left:-5px;
+    width: 100%;
+}
+
+#cartTable tr {
+    color: white;
+}
+#cartTable td {
+    border: #fff outset thin;
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+
+/* checkout page styles */
+#checkoutTable {
+    width: auto;
+    padding: 10px;
+    background-color: #000;
+    color:white;
+    float: left;
+}
+
+#checkoutTable td {
+    vertical-align: top;
+    text-align: left;
+    margin: 5px;
+}
+
+.inputField { 
+    width: auto; 
+    text-align: left;
+}
+
+#infoBox { 
+    width:auto;
+    padding-bottom: 100px;
+    text-align: left;
+    margin: 1% 8% 1% 20%;
+}
+
+#priceBox {
+    width: auto;
+    padding: 10px;
+    color:black;
+    border: 1px aliceblue solid ;
+    background-color: darkgray;
+    margin-top:5%;
+}
+
+#priceBox td {
+    text-align: left;
+    padding: 5px;
+}
+
+.checkoutPriceColumn {
+    width: 250px;
+    font-weight: bold;
+}
+
+.total { 
+    border-top: 1px solid #444 
+}
+
+
+/* confirmation page styles */
+#confirmationText {
+    margin: 0 20px 20px;
+    padding: 10px;
+    background-color: #000;
+    float: left;
+    width:100%;
+    color:#ffffff;
+    text-align: center;
+}
+
+.summaryColumn {
+    margin-top: 15px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#orderSummaryTable {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+}
+
+#orderSummaryTable th td {
+    text-align:center;
+}
+
+#deliveryAddressTable {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+}
+
+#deliveryAddressTable td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.confirmationPriceColumn {
+    width: 90px;
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+}
+
+#deliverySurchargeCellLeft {
+    text-align: right;
+    padding: 0;
+    color: #fff;
+}
+
+#deliverySurchargeCellRight { padding: 0 20px }
+
+#totalCellLeft {
+    text-align: right;
+    padding: 0;
+}
+
+#totalCellRight { padding: 0 20px }
+
+#dateProcessedRow { padding: 2px 0 10px 20px }
+
+ul {
+    margin-left:-200px;
+    list-style: inside;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+}
+
+
+/* admin styles */
+#adminLogo {
+    float:left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#loginBox {
+    width: 450px;
+    margin: 0 auto;
+    border: solid aqua thick 1px ;
+    background-color: #fff;
+    border-radius: 10px;
+    color:#000;
+}
+
+#adminMenu {
+    float: left;
+    width: 180px;
+    margin: 25px 5px 0 30px;
+    border: solid aqua thick 1px ;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+}
+
+#adminMenu p { margin-left: 15px }
+
+#adminTable {
+    width: 580px;
+    float: left;
+    background-color: #edf8f7;
+}
+
+.alignLeft { text-align: left }
+
+.selectedRow {
+    background-color: #c3e3e0;
+    cursor: pointer;
+}
+
+.noDecoration { text-decoration: none }
+
+.rigidWidth { width:200px }
+
+.embedded {
+    margin: 0;
+    border: none;
+}

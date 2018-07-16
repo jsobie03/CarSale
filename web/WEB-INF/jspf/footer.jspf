@@ -1,0 +1,21 @@
+<%--
+    Document   : footer
+    Created on : June 16, 2018, 12:20:12 AM
+    Author     : Jon Sobier
+--%>
+  
+
+    <div id="footer">
+                <br>
+                <hr id="footerDivider">
+                <p id="footerText" class="reallySmallText">
+                    <a href="<c:url value='#'/>"><fmt:message key="privacy"/></a>
+                    
+                    &nbsp;&nbsp;:&nbsp;&nbsp;
+                    <a href="<c:url value='#'/>"><fmt:message key="contact"/></a>
+                    &nbsp;&nbsp;&copy;&nbsp;&nbsp;
+                    2018 The Kensington Trust</p>
+    </div>
+</div>
+</body>
+</html>
